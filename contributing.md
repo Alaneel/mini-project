@@ -7,7 +7,7 @@ Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approacha
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="./assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
+Use the table of contents icon on the top left corner of this document to get to a specific section of this guide quickly.
 
 ## New contributor guide
 
@@ -21,31 +21,23 @@ To get an overview of the project, read the [README](README.md). Here are some r
 
 ## Getting started
 
-To navigate our codebase with confidence, see [the introduction to working in the docs repository](/contributing/working-in-docs-repository.md) :confetti_ball:. For more information on how we write our markdown files, see [the GitHub Markdown reference](contributing/content-markup-reference.md).
-
-Check to see what [types of contributions](/contributing/types-of-contributions.md) we accept before making changes. Some of them don't even require writing a single line of code :sparkles:.
+Check to see what [types of contributions](./contributing/types-of-contributions.md) we accept before making changes. Some of them don't even require writing a single line of code :sparkles:.
 
 ### Issues
 
 #### Create a new issue
 
-If you spot a problem with the docs, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/github/docs/issues/new/choose). 
+If you spot a problem with the docs, [search if an issue already exists](https://github.com/Alaneel/mini-project/issues). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/Alaneel/mini-project/issues/new/choose). 
 
 #### Solve an issue
 
-Scan through our [existing issues](https://github.com/github/docs/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See [Labels](/contributing/how-to-use-labels.md) for more information. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
+Scan through our [existing issues](https://github.com/Alaneel/mini-project/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See [Labels](https://github.com/Alaneel/mini-project/issues/labels) for more information. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
 
 ### Make Changes
 
 #### Make changes in the UI
 
 Click **Make a contribution** at the bottom of any docs page to make small changes such as a typo, sentence fix, or a broken link. This takes you to the `.md` file where you can make your changes and [create a pull request](#pull-request) for a review. 
-
- <img src="./assets/images/contribution_cta.png" width="300" height="150" /> 
-
-#### Make changes in a codespace
-
-For more information about using a codespace for working on GitHub documentation, see "[Working in a codespace](https://github.com/github/docs/blob/main/contributing/codespace.md)."
 
 #### Make changes locally
 
@@ -57,9 +49,7 @@ For more information about using a codespace for working on GitHub documentation
 - Using the command line:
   - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
 
-2. Install or update to **Node.js**, at the version specified in `.node-version`. For more information, see [the development guide](contributing/development.md).
-
-3. Create a working branch and start with your changes!
+2. Create a working branch and start with your changes!
 
 ### Commit your update
 
@@ -80,9 +70,9 @@ Once you submit your PR, a Docs team member will review your proposal. We may as
 
 Congratulations :tada::tada: The GitHub team thanks you :sparkles:. 
 
-Once your PR is merged, your contributions will be publicly visible on the [GitHub docs](https://docs.github.com/en). 
+Once your PR is merged, your contributions will be publicly visible.
 
-Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](/contributing/types-of-contributions.md).
+Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](./contributing/types-of-contributions.md).
 
 ## Windows
 
