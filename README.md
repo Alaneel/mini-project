@@ -1,4 +1,4 @@
-# GitHub Docs <!-- omit in toc --> 
+# SC1015 DSAI Group 3 Project 
  
 This repository contains the documentation website code and Markdown source files for [link](link).
 
