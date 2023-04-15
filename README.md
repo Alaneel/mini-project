@@ -1,19 +1,23 @@
-# SC1015 DSAI Group 3 Project 
- 
-**Our Motivation**
+# SC1015 B126 Group 3 Mini-Project
+
+Done by: Wang Yangming, Wang Anqi, Yang Ziyu
+
+================================
+
+**Our Motivation:**
 - Cryptocurrency is a decentralized digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it. While the working mechanism of cryptocurrency differs from traditional currencies, its stock prices are still determined by the combination of supply, demand, competition, regulations, etc.
 - As prices of cryptocurrencies **fluctuate strongly with time**, it is interesting to know whether ML models can identify some hidden patterns in the prices time series and use them to **predict future prices with decent accuracy**.
 
-**Project Goal**
+## Project Goal:
 - This project aims to evaluate and compare different ML models on their performence of predicting future Bitcoin prices by fitting them to the past Bitcoin prices time series.
 
-**Dataset Used**
+## Dataset Used:
 We used the Bitcoin time series dataset from [Yahoo Finance Crypto](https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD) to obtain Bitcoin prices from 2014 to 2023, cleaned and processed it for Exploratory Data Analysis and Machine Learning.
 - [Dataset Folder](./data/Bitcoin/)
 
 **Note:** Some datasets of other cryptocurrencies are scraped but are not included in the final project 
 
-**Jupyter Notebooks**
+## Jupyter Notebooks:
 - [Data Collection](./src/1.EDA.ipynb)
 - [Data Cleaning and Preprocessing](./src/1.EDA.ipynb)
 - [Exploratory Data Analysis & Visualization](./src/1.EDA.ipynb)
@@ -22,7 +26,7 @@ We used the Bitcoin time series dataset from [Yahoo Finance Crypto](https://fina
 
 **Note:** Some Jupyter Notebooks are used but are not included in the final project (e.g. XGBoost Model)
 
-**Slide Deck**
+## Slide Deck:
 - [Presentation Slides](./presentation/Slides.pdf)
 
 <br>
@@ -30,17 +34,40 @@ We used the Bitcoin time series dataset from [Yahoo Finance Crypto](https://fina
 ---
 
 # Overview of DataScience Pipeline
-### [1. Data Collection:](./src/1.EDA.ipynb)
+### [1. Data Collection](./src/1.EDA.ipynb)
+Used Bitcoin price time series data from [Yahoo Finance Cryptocurrency](https://finance.yahoo.com/crypto/) from 2014 to 2023 (a total of 3108 days)
 
-### [2. Data Cleaning and Preprocessing:](./src/1.EDA.ipynb)
+### [2. Data Cleaning and Preprocessing](./src/1.EDA.ipynb)
+- Removing useless features, handling missing values
+- Export data as csv
+- Generating time-series data
 
-### [3. EDA & Visualization:](./src/1.EDA.ipynb)
+### [3. EDA & Visualization](./src/1.EDA.ipynb)
+Explored, visualized, and generated insights for the following:
+- 'close' price time series over the last 8 years, the last 1 year and the last 1 month 
+- 'close' price 50-day and 200-day moving average
 
-### 4. Machine Learning:
-##### 4.1 [ARIMA](./src/2.ARIMA.ipynb)
+### 4. Machine Learning
+##### 4.1 [SARIMAX](./src/2.ARIMA.ipynb)
+`Metrics:`
+- Augmented Dickey-Fullet Test Score
+- Akaike Information Criterion
+- Root Mean Squared Error (RMSE)
 ##### 4.2 [LSTM and GRU](./src/3.LSTM%26GRU.ipynb)
+`Metrics:`
+- Root Mean Squared Error (RMSE)
 
-### 5. Data-driven Insights:
+### 5. Data-driven Insights
+Conclusions:
+- **LSTM** and **GRU** have better performance on the Bitcoin time series forecasting than *ARIMA*
+- **LSTM** and **GRU** are less dependent on the stability of the time series
+- **ARIMA** is only restricted to cases where the time series follow some seasonality or stable temporal patterns
+- There still a considerable amount of **error** in the prediction solely with ML models
+
+Market traders should:
+- Be **vigilant** when using ML models in predicting stock prices
+- Conduct also the **fundamental analysis** considering the updates from regulatory departments, mass media and authoritative market agencies
+- Reasonably predict the fast-changing stock prices of cryptocurrencies
 
 <br>
 
@@ -48,13 +75,21 @@ We used the Bitcoin time series dataset from [Yahoo Finance Crypto](https://fina
 
 # What we learnt from this project:
 **Data Collection:**
-- Collecting data from Yahoo Finance Website
+- Collecting data from Yahoo Finance Website or from third-apart agent API calls
 
 **Data cleaning and preprocessing:**
+- Removing useless features, handling missing values
+- Generating time-series data
 
 **EDA & Visualization:**
+- Visualization plots with fluctuating values
+- 'close' price time series EDA
 
 **Machine Learning:**
+- Machine Learning Models:
+    - SARIMAX, LSTM, GRU
+- Performance Metrics:
+    - Root Mean Squared Error (RMSE)
 
 <br>
 
@@ -75,35 +110,14 @@ Did but not included in the final product: <br>
 **XGBoost:** `Wang Yangming` <br>
 
 # References
-
-## Contributing
-
-See [the contributing guide](./CONTRIBUTING.md) for detailed instructions on how to get started with our project. 
-
-We accept different [types of contributions](./contributing/types-of-contributions.md), including some that don't require you to write a single line of code.
-
-On our site, you can click the make a contribution button at the bottom of the page to open a pull request for quick fixes like typos, updates, or link fixes.
-
-For more complex contributions, you can open an issue using the most appropriate [issue template](https://github.com/github/docs/issues/new/choose) to describe the changes you'd like to see.
-
-If you're looking for a way to contribute, you can scan through our [existing issues](https://github.com/github/docs/issues) for something to work on. When ready, check out [Getting Started with Contributing](./CONTRIBUTING.md) for detailed instructions.
-
-### Join us in discussions
-
-We use GitHub Discussions to talk about all sorts of topics related to documentation and this site. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to share something amazing you've learned in our docs, join us in the [discussions](https://github.com/Alaneel/mini-project/discussions).
-
-### And that's it!
-
-If you're having trouble with your GitHub account, contact [Support](https://support.github.com/contact).
-
-That's how you can easily become a member of the GitHub Documentation community. :sparkles:
-
-## License
-
-All other code in this repository is licensed under the [MIT license](LICENSE).
-
-When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos).
-
-## Thanks :purple_heart:
-
-Thanks for all your contributions and efforts towards improving our service. We thank you for being part of our :sparkles: community :sparkles:!
+- Wikipedia contributors. (2023). Cryptocurrency. Wikipedia. https://en.wikipedia.org/wiki/Cryptocurrency
+- Wikipedia contributors. (2023a). Bitcoin. Wikipedia. https://en.wikipedia.org/wiki/Bitcoin
+- pandas - Python Data Analysis Library. (n.d.). https://pandas.pydata.org/
+- Nguyen, B. (2021, December 29). End-to-End Time Series Analysis and Forecasting: a Trio of SARIMAX, LSTM and Prophet (Part 1). Medium. https://towardsdatascience.com/end-to-end-time-series-analysis-and-forecasting-a-trio-of-sarimax-lstm-and-prophet-part-1-306367e57db8
+- statsmodels.tsa.arima.model.ARIMA — statsmodels. (n.d.). https://www.statsmodels.org/dev/generated/statsmodels.tsa.arima.model.ARIMA.html
+- Wikipedia contributors. (2023a). Power transform. Wikipedia. https://en.wikipedia.org/wiki/Power_transform#Example
+- Wikipedia contributors. (2022). Augmented Dickey–Fuller test. Wikipedia. https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test
+- LSTM — PyTorch 2.0 documentation. (n.d.). https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
+- GRU — PyTorch 2.0 documentation. (n.d.). https://pytorch.org/docs/stable/generated/torch.nn.GRU.html
+- Phi, M. (2020, June 28). Illustrated Guide to LSTM’s and GRU’s: A step by step explanation. Medium. https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+- sklearn.preprocessing.MinMaxScaler. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html
